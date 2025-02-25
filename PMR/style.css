@@ -144,3 +144,68 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+/*  /* temporary styles  */
+.section-services {
+  padding: 9.6rem 0;
+  background: rgb(192, 211, 222);
+  background: radial-gradient(
+    circle,
+    rgba(192, 211, 222, 1) 0%,
+    rgba(129, 167, 189, 1) 100%
+  );
+}
+
+/* re-usable grid styles */
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* end of re-usable */
+
+/* SERVICES SECTION  */
+
+.feature-icon {
+  color: #f2f6f8;
+  /* subject to change */
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: #81a7bd;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.section-services h2 {
+  text-align: center;
+  margin-bottom: 9.8rem;
+}
