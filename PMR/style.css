@@ -209,3 +209,65 @@ body {
   text-align: center;
   margin-bottom: 9.8rem;
 }
+
+/* CTA Section */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #5a7584;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #81a7bd, #5a7584);
+  overflow: hidden;
+  /* temp*/
+  height: 50rem;
+}
+
+.cta-text-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(202, 31%, 62%, 0.35),
+      hsla(201, 19%, 44%, 0.35)
+    ),
+    url(../PMR/images/medium-shot-man-working-roof.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-icon-cta {
+  color: #f2f6f8;
+  /* subject to change */
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #81a7bd;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title-cta {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text-cta {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* Possible rework of images and text for the sections  
+ to use this re-work if possible https://www.browserstack.com/guide/position-text-over-image-using-css#:~:text=An%20easy%20and%20straightforward%20way,div%20in%20the%20HTML%20file.*/
