@@ -59,7 +59,7 @@ body {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #81a7bd;
+  background-color: #3d5571;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -101,7 +101,7 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  background-color: #81a7bd;
+  background-color: #3d5571;
   font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
@@ -113,13 +113,16 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #81a7bd;
+  background-color: #3d5571;
   color: #fff;
 }
 
+/* Use darker backgoud color, and possible re-word of the button to be with Number?  */
+
 .btn--full:hover,
 .btn--full:active {
-  background-color: #5a7584;
+  background-color: #8cb5ca;
+  color: #333;
 }
 
 .btn--outline:link,
@@ -130,7 +133,8 @@ body {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #81a7bd;
+  background-color: #3d5571;
+  color: #f6f8f8;
 
   /* to add border inside */
   /* box-shadow: inset 0 0 0 3px #fff; */
