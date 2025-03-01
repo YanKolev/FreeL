@@ -1,22 +1,18 @@
-.image img {
-  width: 100%;
-  height: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.image {
-  position: relative;
+html {
+  font-size: 62.5%;
 }
 
-.image figcaption {
-  position: absolute;
-  top: 10%;
-  bottom: 50%;
-  right: 40%;
-  font-size: 4.8rem;
-  font-weight: 700;
-  line-height: 1.05;
-  /* color: #5d727e; */
-  color: #3d5571;
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
 }
 
 /* ********** HEADER *****************  */
@@ -70,3 +66,5 @@
 .main-nav-link.nav-cta:active {
   background-color: #5a7584;
 }
+
+/* Hero */
