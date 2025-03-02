@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 500;
   color: #555;
 }
 
@@ -86,7 +86,7 @@ body {
 
 .heading-primary {
   font-size: 5.2rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
@@ -192,7 +192,7 @@ body {
   /* subject to change */
   height: 4.8rem;
   width: 4.8rem;
-  background-color: #81a7bd;
+  background-color: #3d5571;
   margin-bottom: 3.2rem;
   padding: 1.6rem;
   border-radius: 50%;
@@ -200,7 +200,7 @@ body {
 .feature-title {
   font-size: 2.4rem;
   color: #333;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 1.6rem;
 }
 
@@ -214,6 +214,9 @@ body {
   margin-bottom: 9.8rem;
 }
 
+/* Possible rework of images and text for the sections  
+ to use this re-work if possible https://www.browserstack.com/guide/position-text-over-image-using-css#:~:text=An%20easy%20and%20straightforward%20way,div%20in%20the%20HTML%20file.*/
+
 /* CTA Section */
 
 .section-cta {
@@ -222,21 +225,76 @@ body {
 
 .cta {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr; /* Adjusted ratio for better content space */
   background-color: #5a7584;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-
   background-image: linear-gradient(to right bottom, #81a7bd, #5a7584);
   overflow: hidden;
-  /* temp*/
-  height: 50rem;
+  height: auto; /* Removed fixed height to allow content to dictate height */
 }
 
 .cta-text-box {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0 auto;
+  padding: 4.8rem;
+  color: #f2f6f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.cta-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.contact-features {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.feature-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.feature-icon-cta {
+  color: #f2f6f8;
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: #3d5571;
+  padding: 1.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title-cta {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.feature-text-cta {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #f2f6f8;
 }
 
 .cta-img-box {
@@ -245,33 +303,83 @@ body {
       hsla(202, 31%, 62%, 0.35),
       hsla(201, 19%, 44%, 0.35)
     ),
-    url(../PMR/images/medium-shot-man-working-roof.webp);
+    url(images/medium-shot-man-working-roof.webp);
   background-size: cover;
   background-position: center;
 }
 
-.feature-icon-cta {
-  color: #f2f6f8;
-  /* subject to change */
-  height: 2.4rem;
-  width: 2.4rem;
+/*  overall style  */
+
+/* Modern approach with angled dividers between sections */
+
+/* Base setup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f6f8;
+}
+
+/* Section styling */
+
+/* Modern approach with angled dividers between sections */
+
+/* Base setup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f6f8;
+}
+
+/* Section styling */
+.section-hero {
+  background-color: #f2f6f8;
+  padding: 4.8rem 0 9.6rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: #f2f6f8;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  z-index: 2;
+}
+
+.section-services {
+  background: linear-gradient(to bottom, #c0d3de 0%, #81a7bd 100%);
+  padding: 12rem 0 12rem 0;
+  margin-top: -6rem;
+  position: relative;
+  z-index: 0;
+}
+
+.section-services::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
   background-color: #81a7bd;
-  margin-bottom: 3.2rem;
-  padding: 1.6rem;
-  border-radius: 50%;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 2;
 }
 
-.feature-title-cta {
-  font-size: 1.2rem;
-  color: #333;
-  font-weight: 700;
-  margin-bottom: 1.6rem;
+.section-cta {
+  background-color: #5a7584;
+  padding: 12rem 0 9.6rem 0;
+  margin-top: -6rem;
+  position: relative;
+  z-index: 0;
 }
 
-.feature-text-cta {
-  font-size: 1.8rem;
-  line-height: 1.8;
+/* Adjust content containers to align with the angled design */
+.container {
+  position: relative;
+  z-index: 5;
 }
-
-/* Possible rework of images and text for the sections  
- to use this re-work if possible https://www.browserstack.com/guide/position-text-over-image-using-css#:~:text=An%20easy%20and%20straightforward%20way,div%20in%20the%20HTML%20file.*/

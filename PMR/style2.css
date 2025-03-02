@@ -68,3 +68,29 @@ body {
 }
 
 /* Hero */
+
+.wrapper {
+  position: relative;
+  background: url("images/medium-shot-man-working-roof.webp") no-repeat center
+    top;
+  background-size: cover;
+  height: 100vh; /* Adjust based on your design */
+}
+
+.header {
+  position: relative;
+  height: 80px; /* Adjust header height */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Optional semi-transparent background */
+  z-index: 2;
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - 80px); /* Ensures it fills the rest of the viewport */
+  z-index: 1;
+}
