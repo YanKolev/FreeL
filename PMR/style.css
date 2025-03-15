@@ -21,14 +21,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f6f8;
+  background-color: #b9c1c4;
+  /* primari color, for the pallete-  */
 
   /* adding fixed height for future sticky navigation */
   height: 9.6rem;
   padding: 0 4.8rem;
 }
 .logo {
-  height: 2.2rem;
+  height: 9.6rem;
+  width: 9.6rem;
 }
 
 /* *********NAVIGATION********************* */
@@ -43,11 +45,15 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #555;
+  color: #030303;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
 }
+
+/* update navigation butons, link them with corresponding sections, improve the colors for contrast, 
+possibility of making 4 different containers for the services/ or not, footer, polish content, SEO, GMB, maybe even add analytics, 
+mobile design also  */
 
 .main-nav-link:hover,
 .main-nav-link:active {
@@ -322,23 +328,23 @@ body {
 /* Section styling */
 
 /* Modern approach with angled dividers between sections */
-
-/* Base setup */
+/* 
+Base setup
 body {
   margin: 0;
   padding: 0;
   background-color: #f2f6f8;
-}
+} */
 
 /* Section styling */
-.section-hero {
+/* .section-hero {
   background-color: #f2f6f8;
   padding: 4.8rem 0 9.6rem 0;
   position: relative;
   z-index: 1;
-}
+} */
 
-.section-hero::after {
+/* .section-hero::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -348,17 +354,17 @@ body {
   background-color: #f2f6f8;
   clip-path: polygon(0 0, 100% 100%, 100% 0);
   z-index: 2;
-}
+} */
 
-.section-services {
+/* .section-services {
   background: linear-gradient(to bottom, #c0d3de 0%, #81a7bd 100%);
   padding: 12rem 0 12rem 0;
   margin-top: -6rem;
   position: relative;
   z-index: 0;
-}
+} */
 
-.section-services::after {
+/* .section-services::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -368,18 +374,18 @@ body {
   background-color: #81a7bd;
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
   z-index: 2;
-}
+} */
 
-.section-cta {
+/* .section-cta {
   background-color: #5a7584;
   padding: 12rem 0 9.6rem 0;
   margin-top: -6rem;
   position: relative;
   z-index: 0;
-}
+} */
 
 /* Adjust content containers to align with the angled design */
-.container {
+/* .container {
   position: relative;
   z-index: 5;
-}
+} */
