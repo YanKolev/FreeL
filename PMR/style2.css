@@ -159,6 +159,7 @@ mobile design also  */
   background-color: #5a7584;
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ********** HERO SECTION *************  */
 
 .section-hero {
@@ -176,7 +177,7 @@ mobile design also  */
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("images/long-shot-man-working-roof.webp");
+  background-image: url("images/roofb\ \(1\).jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.5; /* Adjust opacity to your preference */
@@ -323,21 +324,25 @@ mobile design also  */
 
 /* end of re-usable */
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* SERVICES SECTION  */
 
 .feature-icon {
-  color: #f2f6f8;
+  color: #3d5571;
   /* subject to change */
   height: 4.8rem;
   width: 4.8rem;
-  background-color: #3d5571;
+  background-color: #f2f6f8;
   margin-bottom: 3.2rem;
   padding: 1.6rem;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .feature-title {
   font-size: 2.4rem;
-  color: #333;
+  color: #f6f8f8;
   font-weight: 600;
   margin-bottom: 1.6rem;
 }
@@ -345,6 +350,7 @@ mobile design also  */
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+  color: #f6f8f8;
 }
 
 .section-services h2 {
@@ -352,9 +358,90 @@ mobile design also  */
   margin-bottom: 9.8rem;
 }
 
+.feature {
+  background-color: #3d5571; /* Using your existing blue theme */
+  padding: 3.2rem;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  /* Sloped top like a modern roof */
+  clip-path: polygon(
+    0% 10%,
+    /* Top left */ 100% 0%,
+    /* Top right - higher */ 100% 100%,
+    /* Bottom right */ 0% 100% /* Bottom left */
+  );
+
+  box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.3);
+}
+
+.feature:hover {
+  transform: translateY(
+    -1rem
+  ) !important; /* The !important overrides the staggered pattern */
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  padding-top: 1.5rem; /* Accommodate for the sloped top */
+}
+
+/* Create a staggered pattern */
+.grid--4-cols .feature:nth-child(odd) {
+  transform: translateY(1.5rem);
+}
+
 /* Possible rework of images and text for the sections  
  to use this re-work if possible https://www.browserstack.com/guide/position-text-over-image-using-css#:~:text=An%20easy%20and%20straightforward%20way,div%20in%20the%20HTML%20file.*/
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ABOUT ME SECTION */
+
+.section-about {
+  background-color: #f2f6f8;
+  padding: 4.8rem 0 9.6rem 0;
+  margin-bottom: 9.6rem;
+  margin-top: 9.6rem;
+}
+
+.about {
+  z-index: 1;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary-about {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-top: 4.8rem;
+}
+.about-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.about-img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  border-radius: 12px; /* Optional: adds rounded corners */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1); /* Optional: adds depth */
+  margin-top: 9.6rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* CTA Section */
 
 .section-cta {
@@ -364,14 +451,6 @@ mobile design also  */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   padding: 4.8rem; /* Adjust padding as needed */
-  background-image: linear-gradient(
-      rgba(241, 235, 235, 0.6),
-      rgba(241, 235, 235, 0.6)
-    ),
-    url("images/long-shot-man-working-roof.webp"); /* Background image */
-  background-size: cover; /* Ensure the image covers the entire section */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat;
 }
 
 /* Ensures the contact content stays within readable space */
@@ -384,7 +463,7 @@ mobile design also  */
 
 .cta-text-box {
   padding: 4.8rem;
-  color: #f2f6f8;
+  color: #92c6df;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +473,7 @@ mobile design also  */
   font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 2.4rem;
-  color: #fff;
+  color: #4f4d4d;
 }
 
 .cta-description {
@@ -443,15 +522,4 @@ mobile design also  */
   font-size: 1.8rem;
   line-height: 1.4;
   color: #f2f6f8;
-}
-
-.cta-img-box {
-  background-image: linear-gradient(
-      to right bottom,
-      hsla(202, 31%, 62%, 0.35),
-      hsla(201, 19%, 44%, 0.35)
-    ),
-    url(images/long-shot-man-working-roof.webp);
-  background-size: cover;
-  background-position: center;
 }
