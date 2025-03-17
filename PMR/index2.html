@@ -16,42 +16,141 @@
   </head>
   <body>
     <!-- Sample text : 
-     Piotr Marciniak
-      30-letnie doświadczenie w usługach remontowo-porządkowych dla przestrzeni zewnętrznych. 
+         Piotr Marciniak
+          30-letnie doświadczenie w usługach remontowo-porządkowych dla przestrzeni zewnętrznych. 
+    
+          W swojej ofercie posiadamy:
+          Montaż rynien 
+          Czyszczenie i malowanie dachów
+          Czyszczenie i piaskowanie kostki brukowej
+    
+          Do czyszczenia używamy myjki wysokociśnieniowej Karcher ze środkami chemicznymi -->
 
-      W swojej ofercie posiadamy:
-      Montaż rynien 
-      Czyszczenie i malowanie dachów
-      Czyszczenie i piaskowanie kostki brukowej
+    <header class="header">
+      <!-- need to find a logo and place it  -->
+      <img class="logo" alt="Piotr Marciniak Logo" src="images/srst4avm.webp" />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">About Us</a></li>
+          <li><a class="main-nav-link" href="#">Services</a></li>
+          <li><a class="main-nav-link nav-cta" href="#">Call now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Contact 30-year professional in the roofing business
+            </h1>
+            <p class="hero-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+              laborum cupiditate ut molestiae tempora pariatur?
+            </p>
 
-      Do czyszczenia używamy myjki wysokociśnieniowej Karcher ze środkami chemicznymi -->
-    <div class="wrapper">
-      <header class="header">
-        <!-- need to find a logo and place it  -->
-        <img class="logo" alt="Piotr Marciniak Logo" src="" />
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">Services</a></li>
-            <li><a class="main-nav-link" href="#">About US</a></li>
-            <li><a class="main-nav-link" href="#">FAQ</a></li>
-            <li><a class="main-nav-link nav-cta" href="#">Call now</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="section-hero">
-          <div class="hero-box">
-            <div class="hero-img"></div>
-            <div class="hero-text">
-              <p>
-                30-letnie doświadczenie w usługach remontowo-porządkowych dla
-                przestrzeni zewnętrznych.
-              </p>
-            </div>
+            <a href="#" class="btn btn--full margin-right-sm">Call now</a>
+            <a href="#" class="btn btn--outline">Services</a>
           </div>
-        </section>
-    </div>
+          <div class="hero-img-box">
+            <!-- Keep your existing image here -->
+            <img
+              src="images/long-shot-man-working-roof.webp"
+              class="hero-img"
+              alt="Man on a roof,renovating the roof"
+            />
+          </div>
+        </div>
+      </section>
+      <!--  header  + 2 more sections, 1 section 3 icons with sample text beneath, 1 section with provided services 2/3 colums 
+         maybe 1 more with contact number and footer -->
+
+      <section class="section-services">
+        <h2 class="heading-primary">Services</h2>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="hammer-outline"></ion-icon>
+            <p class="feature-title">Montaż</p>
+            <p class="feature-text">Montaż rynien</p>
+          </div>
+
+          <div class="feature">
+            <ion-icon class="feature-icon" name="trash-outline"></ion-icon>
+            <p class="feature-title">Czyszczenie</p>
+            <p class="feature-text">Czyszczenie dachów</p>
+          </div>
+
+          <div class="feature">
+            <ion-icon class="feature-icon" name="brush-outline"></ion-icon>
+            <p class="feature-title">Malowanie</p>
+            <p class="feature-text">Malowanie dachów</p>
+          </div>
+
+          <div class="feature">
+            <ion-icon class="feature-icon" name="water-outline"></ion-icon>
+            <p class="feature-title">Czyszczenie</p>
+            <p class="feature-text">Używamy myjki wysokociśnieniowej Karcher</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fix for the contact section structure -->
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="cta-heading">Contact us</h2>
+              <p class="cta-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                blanditiis!
+              </p>
+
+              <div class="contact-features">
+                <div class="feature-cta">
+                  <ion-icon
+                    class="feature-icon-cta"
+                    name="call-outline"
+                  ></ion-icon>
+                  <div class="contact-text">
+                    <p class="feature-title-cta">Phone Number</p>
+                    <p class="feature-text-cta">+49 148 599 955</p>
+                  </div>
+                </div>
+
+                <div class="feature-cta">
+                  <ion-icon
+                    class="feature-icon-cta"
+                    name="mail-outline"
+                  ></ion-icon>
+                  <div class="contact-text">
+                    <p class="feature-title-cta">Email</p>
+                    <p class="feature-text-cta">prmroofing@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="feature-cta">
+                  <ion-icon
+                    class="feature-icon-cta"
+                    name="home-outline"
+                  ></ion-icon>
+                  <div class="contact-text">
+                    <p class="feature-title-cta">Address</p>
+                    <p class="feature-text-cta">Place for address</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Mechanic working on roof"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

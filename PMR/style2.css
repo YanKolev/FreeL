@@ -1,3 +1,88 @@
+/* ********** HEADER *****************  */
+
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafb; */
+
+/* adding fixed height for future sticky navigation */
+/* height: 9.6rem;
+  padding: 0 4.8rem;
+} */
+/* .logo {
+  height: 2.2rem;
+} */
+
+/* *********NAVIGATION********************* */
+/* .main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+} */
+
+/* .main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+} */
+
+/* .main-nav-link:hover,
+.main-nav-link:active {
+  color: #5a7584;
+} */
+
+/* .main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #f8fafb;
+  background-color: #3e5774;
+} */
+
+/* .main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #5a7584;
+} */
+
+/* Hero */
+/* 
+.wrapper {
+  position: relative;
+  background: url("images/medium-shot-man-working-roof.webp") no-repeat center
+    top;
+  background-size: cover;
+  height: 100vh; /* Adjust based on your design */
+
+/* .header  */
+/* position: relative;
+  height: 80px; /* Adjust header height */
+/* background: rgba( */
+/* 255,
+    255,
+    255,
+    0.7
+  ); Optional semi-transparent background */
+/* z-index: 2;
+} */
+
+/* .hero {
+  position: relative;
+  height: calc(100vh - 80px); /* Ensures it fills the rest of the viewport */
+/* z-index: 1;
+} */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* TEST 
+ */
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +96,7 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 500;
   color: #555;
 }
 
@@ -21,14 +106,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8fafb;
+  background-color: #b9c1c4;
+  /* primari color, for the pallete-  */
 
   /* adding fixed height for future sticky navigation */
   height: 9.6rem;
   padding: 0 4.8rem;
 }
 .logo {
-  height: 2.2rem;
+  height: 9.6rem;
+  width: 9.6rem;
+  border: none;
 }
 
 /* *********NAVIGATION********************* */
@@ -43,11 +131,15 @@ body {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #555;
+  color: #030303;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
 }
+
+/* update navigation butons, link them with corresponding sections, improve the colors for contrast, 
+possibility of making 4 different containers for the services/ or not, footer, polish content, SEO, GMB, maybe even add analytics, 
+mobile design also  */
 
 .main-nav-link:hover,
 .main-nav-link:active {
@@ -58,8 +150,8 @@ body {
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
-  color: #f8fafb;
-  background-color: #3e5774;
+  color: #fff;
+  background-color: #3d5571;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -67,30 +159,299 @@ body {
   background-color: #5a7584;
 }
 
-/* Hero */
+/* ********** HERO SECTION *************  */
 
-.wrapper {
+.section-hero {
+  background-color: #f2f6f8;
+  padding: 4.8rem 0 9.6rem 0;
   position: relative;
-  background: url("images/medium-shot-man-working-roof.webp") no-repeat center
-    top;
+  overflow: hidden; /* To contain the background */
+}
+
+/* Add a pseudo-element to create the background extension */
+.section-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("images/long-shot-man-working-roof.webp");
   background-size: cover;
-  height: 100vh; /* Adjust based on your design */
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity to your preference */
+  z-index: 0;
+  filter: blur(10px); /* Optional: adds a slight blur effect */
 }
 
-.header {
-  position: relative;
-  height: 80px; /* Adjust header height */
-  background: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); /* Optional semi-transparent background */
-  z-index: 2;
-}
-
+/* Make sure the hero content sits above the background */
 .hero {
   position: relative;
-  height: calc(100vh - 80px); /* Ensures it fills the rest of the viewport */
   z-index: 1;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+/* Make sure the hero image stands out */
+.hero-img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  border-radius: 12px; /* Optional: adds rounded corners */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1); /* Optional: adds depth */
+}
+
+/* 
+.section-hero {
+  background-color: #f2f6f8;
+  padding: 4.8rem 0 9.6rem 0;
+} */
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #3d5571;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #3d5571;
+  color: #fff;
+}
+
+/* Use darker backgoud color, and possible re-word of the button to be with Number?  */
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #8cb5ca;
+  color: #333;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #3d5571;
+  color: #f6f8f8;
+
+  /* to add border inside */
+  /* box-shadow: inset 0 0 0 3px #fff; */
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* helper class  */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/*  /* temporary styles  */
+.section-services {
+  padding: 9.6rem 0;
+  background: rgb(192, 211, 222);
+  background: radial-gradient(
+    circle,
+    rgba(192, 211, 222, 1) 0%,
+    rgba(129, 167, 189, 1) 100%
+  );
+}
+
+/* re-usable grid styles */
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* end of re-usable */
+
+/* SERVICES SECTION  */
+
+.feature-icon {
+  color: #f2f6f8;
+  /* subject to change */
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: #3d5571;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.section-services h2 {
+  text-align: center;
+  margin-bottom: 9.8rem;
+}
+
+/* Possible rework of images and text for the sections  
+ to use this re-work if possible https://www.browserstack.com/guide/position-text-over-image-using-css#:~:text=An%20easy%20and%20straightforward%20way,div%20in%20the%20HTML%20file.*/
+
+/* CTA Section */
+
+.section-cta {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 4.8rem; /* Adjust padding as needed */
+  background-image: linear-gradient(
+      rgba(241, 235, 235, 0.6),
+      rgba(241, 235, 235, 0.6)
+    ),
+    url("images/long-shot-man-working-roof.webp"); /* Background image */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+/* Ensures the contact content stays within readable space */
+.cta {
+  max-width: 120rem; /* Restricts width for better readability */
+  width: 100%;
+  color: #fff; /* Ensures text is visible */
+  text-align: center;
+}
+
+.cta-text-box {
+  padding: 4.8rem;
+  color: #f2f6f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-heading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.cta-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.contact-features {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.feature-cta {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.feature-icon-cta {
+  color: #f2f6f8;
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: #3d5571;
+  padding: 1.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title-cta {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.feature-text-cta {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #f2f6f8;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(202, 31%, 62%, 0.35),
+      hsla(201, 19%, 44%, 0.35)
+    ),
+    url(images/long-shot-man-working-roof.webp);
+  background-size: cover;
+  background-position: center;
 }
