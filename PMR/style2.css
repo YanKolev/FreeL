@@ -98,6 +98,24 @@ body {
   line-height: 1;
   font-weight: 500;
   color: #555;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    135deg,
+    /* Diagonal direction - 135deg is top-left to bottom-right */ #b9c1c4 0%,
+    #f2f6f8 50%,
+    #3d5571 100%
+  );
+  z-index: -1;
 }
 
 /* ********** HEADER *****************  */
@@ -163,15 +181,15 @@ mobile design also  */
 /* ********** HERO SECTION *************  */
 
 .section-hero {
-  background-color: #f2f6f8;
+  /* background-color: #f2f6f8; */
   padding: 4.8rem 0 9.6rem 0;
   position: relative;
   overflow: hidden; /* To contain the background */
 }
 
 /* Add a pseudo-element to create the background extension */
-.section-hero::before {
-  content: "";
+/* .section-hero::before { */
+/* content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -179,11 +197,11 @@ mobile design also  */
   left: 0;
   background-image: url("images/roofb\ \(1\).jpg");
   background-size: cover;
-  background-position: center;
-  opacity: 0.5; /* Adjust opacity to your preference */
-  z-index: 0;
-  filter: blur(10px); /* Optional: adds a slight blur effect */
-}
+  background-position: center; */
+/* opacity: 0.5; Adjust opacity to your preference */
+/* z-index: 0; */
+/* filter: blur(10px); Optional: adds a slight blur effect */
+/* } */
 
 /* Make sure the hero content sits above the background */
 .hero {
@@ -291,12 +309,12 @@ mobile design also  */
 /*  /* temporary styles  */
 .section-services {
   padding: 9.6rem 0;
-  background: rgb(192, 211, 222);
+  /* background: rgb(192, 211, 222);
   background: radial-gradient(
     circle,
     rgba(192, 211, 222, 1) 0%,
     rgba(129, 167, 189, 1) 100%
-  );
+  ); */
 }
 
 /* re-usable grid styles */
@@ -401,7 +419,7 @@ mobile design also  */
 /* ABOUT ME SECTION */
 
 .section-about {
-  background-color: #f2f6f8;
+  /* background-color: #f2f6f8; */
   padding: 4.8rem 0 9.6rem 0;
   margin-bottom: 9.6rem;
   margin-top: 9.6rem;
