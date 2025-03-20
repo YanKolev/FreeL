@@ -27,8 +27,13 @@
           Do czyszczenia używamy myjki wysokociśnieniowej Karcher ze środkami chemicznymi -->
 
     <header class="header">
-      <!-- need to find a logo and place it  -->
-      <img class="logo" alt="Piotr Marciniak Logo" src="images/srst4avm.webp" />
+      <a href="#">
+        <img
+          class="logo"
+          alt="Piotr Marciniak Logo"
+          src="images/srst4avm.webp"
+        />
+      </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">About Us</a></li>
@@ -66,31 +71,35 @@
          maybe 1 more with contact number and footer -->
 
       <section class="section-services">
-        <h2 class="heading-primary">Services</h2>
+        <div class="services">
+          <h2 class="heading-primary">Services</h2>
 
-        <div class="container grid grid--4-cols">
-          <div class="feature">
-            <ion-icon class="feature-icon" name="hammer-outline"></ion-icon>
-            <p class="feature-title">Montaż</p>
-            <p class="feature-text">Montaż rynien</p>
-          </div>
+          <div class="container grid grid--4-cols">
+            <div class="feature">
+              <ion-icon class="feature-icon" name="hammer-outline"></ion-icon>
+              <p class="feature-title">Montaż</p>
+              <p class="feature-text">Montaż rynien</p>
+            </div>
 
-          <div class="feature">
-            <ion-icon class="feature-icon" name="trash-outline"></ion-icon>
-            <p class="feature-title">Czyszczenie</p>
-            <p class="feature-text">Czyszczenie dachów</p>
-          </div>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="trash-outline"></ion-icon>
+              <p class="feature-title">Czyszczenie</p>
+              <p class="feature-text">Czyszczenie dachów</p>
+            </div>
 
-          <div class="feature">
-            <ion-icon class="feature-icon" name="brush-outline"></ion-icon>
-            <p class="feature-title">Malowanie</p>
-            <p class="feature-text">Malowanie dachów</p>
-          </div>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="brush-outline"></ion-icon>
+              <p class="feature-title">Malowanie</p>
+              <p class="feature-text">Malowanie dachów</p>
+            </div>
 
-          <div class="feature">
-            <ion-icon class="feature-icon" name="water-outline"></ion-icon>
-            <p class="feature-title">Czyszczenie</p>
-            <p class="feature-text">Używamy myjki wysokociśnieniowej Karcher</p>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="water-outline"></ion-icon>
+              <p class="feature-title">Czyszczenie</p>
+              <p class="feature-text">
+                Używamy myjki wysokociśnieniowej Karcher
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -169,6 +178,37 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container grid grid--5-cols">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Piotr Marciniak Logo"
+              src="images/srst4avm.webp"
+            />
+          </a>
+
+
+
+          <p class="copyright">Copyright &copy; 2025. All rights reserved</p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p>Address palceholder space</p>
+          </address>
+        </div>
+        <nav class="nav-col">Tel:<a href="tel:+49 148 599 955">+49 148 599 955</a></nav>
+        <nav class="nav-col">Email:<a href="mailto:example@example.com"</a></nav>
+        <nav class="nav-col">
+          <ul class="social-links">
+            <li><a href="#"></a><ion-icon name="logo-facebook"></ion-icon></li>
+          </ul>
+          
+      </div>
+    </footer>
 
     <script
       type="module"
