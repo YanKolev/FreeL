@@ -118,6 +118,7 @@ mobile design also  */
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
+  border: 1px solid brown;
 }
 
 /* Make sure the hero image stands out */
@@ -248,6 +249,9 @@ mobile design also  */
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* SERVICES SECTION  */
+.services {
+  border: 1px solid brown;
+}
 
 .feature-icon {
   color: #3d5571;
@@ -342,6 +346,7 @@ mobile design also  */
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
+  border: 1px solid brown;
 }
 
 .heading-primary-about {
@@ -386,7 +391,7 @@ mobile design also  */
   width: 100%;
   color: #fff; /* Ensures text is visible */
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid brown;
 }
 
 .cta-text-box {
