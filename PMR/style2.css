@@ -26,9 +26,9 @@ body::before {
   height: 100%;
   background-image: linear-gradient(
     135deg,
-    /* Diagonal direction - 135deg is top-left to bottom-right */ #b9c1c4 0%,
+    /* Diagonal direction - 135deg is top-left to bottom-right */ #fbf3e8 0%,
     #f2f6f8 50%,
-    #3d5571 100%
+    #d23b28 100%
   );
   z-index: -1;
 }
@@ -39,7 +39,9 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b9c1c4;
+  /* background-color: #b9c1c4; */
+  background-color: #fbf3e8;
+
   /* primari color, for the pallete-  */
 
   /* adding fixed height for future sticky navigation */
@@ -65,7 +67,7 @@ body::before {
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #030303;
+  color: #091926;
   font-weight: 500;
   font-size: 1.8rem;
   transition: all 0.3s;
@@ -85,12 +87,12 @@ mobile design also  */
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #3d5571;
+  background-color: #d23b28;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #5a7584;
+  background-color: #de5625;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -175,7 +177,7 @@ mobile design also  */
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #3d5571;
+  background-color: #d23b28;
   color: #fff;
 }
 
@@ -289,7 +291,7 @@ mobile design also  */
 }
 
 .feature {
-  background-color: #3d5571; /* Using your existing blue theme */
+  background-color: #d23b28;
   padding: 3.2rem;
   position: relative;
   transition: transform 0.3s, box-shadow 0.3s;
