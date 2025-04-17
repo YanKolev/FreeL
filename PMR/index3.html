@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roofing Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1f2937",
+              secondary: "#6b7280",
+              accent: "#f59e0b",
+              light: "#f9fafb",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-light text-primary font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold text-accent">RoofingCo</div>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+          <li>
+            <a href="#about" class="hover:text-accent transition">About</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-accent transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-accent transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-accent transition">Contact</a>
+          </li>
+        </ul>
+        <a href="#contact" class="md:hidden text-accent">Menu</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="text-white py-32 md:py-48 bg-cover bg-center"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1632759145351-1d170f2f6ede?auto=format&fit=crop&q=80&w=2070');
+      "
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl">
+          <span
+            class="bg-accent text-white px-4 py-1 rounded-full text-sm font-medium inline-block mb-4"
+          >
+            Trusted Roofing Services
+          </span>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Quality Roofing Solutions For Your Home
+          </h1>
+          <p class="text-lg md:text-xl mb-8 text-gray-200">
+            Professional roofing services with quality craftsmanship and
+            exceptional customer service. Protect your investment with our
+            expert team.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+          >
+            <a
+              href="#contact"
+              class="bg-accent hover:bg-amber-500 text-white font-medium py-3 px-6 rounded-md text-center transition duration-300"
+            >
+              Get Free Estimate
+            </a>
+            <a
+              href="#services"
+              class="bg-white hover:bg-gray-100 text-primary font-medium py-3 px-6 rounded-md text-center transition duration-300"
+            >
+              Our Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
+          <p class="text-lg text-secondary">
+            With over 20 years of experience, RoofingCo has been delivering
+            top-quality roofing services to homeowners and businesses. Our
+            skilled team is committed to excellence and customer satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold">Our Services</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-2">Roof Installation</h3>
+            <p class="text-secondary">
+              High-quality roof installations using premium materials and
+              professional craftsmanship.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-2">Roof Repair</h3>
+            <p class="text-secondary">
+              Fast and reliable roof repair services to keep your home protected
+              from the elements.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition"
+          >
+            <h3 class="text-xl font-semibold mb-2">Roof Inspection</h3>
+            <p class="text-secondary">
+              Thorough inspections to identify issues and extend the life of
+              your roof.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold">Our Projects</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <img
+            src="https://source.unsplash.com/600x400/?roof,1"
+            class="rounded shadow"
+            alt="Project 1"
+          />
+          <img
+            src="https://source.unsplash.com/600x400/?roof,2"
+            class="rounded shadow"
+            alt="Project 2"
+          />
+          <img
+            src="https://source.unsplash.com/600x400/?roof,3"
+            class="rounded shadow"
+            alt="Project 3"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center mb-8">
+          <h2 class="text-3xl md:text-4xl font-bold">Contact Us</h2>
+          <p class="text-secondary mt-2">
+            We’d love to hear from you! Get in touch using the form below.
+          </p>
+        </div>
+        <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow space-y-4">
+          <input
+            type="text"
+            placeholder="Name"
+            class="w-full border border-gray-300 rounded px-4 py-2"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full border border-gray-300 rounded px-4 py-2"
+          />
+          <textarea
+            placeholder="Message"
+            class="w-full border border-gray-300 rounded px-4 py-2 h-32"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-accent hover:bg-amber-500 text-white font-medium py-3 px-6 rounded-md transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-6">
+      <p>&copy; 2025 RoofingCo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
