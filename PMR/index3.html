@@ -1,111 +1,230 @@
+<!-- Polish version  -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roofing Co.</title>
-    <link rel="stylesheet" href="style3.css" />
+    <title>PioMar Dach - Profesjonalne Usługi Dekarskie</title>
+    <link rel="stylesheet" href="style4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
-  <body class="bg-light text-primary font-sans">
-    <!-- Navbar -->
-    <nav class="navbar">
+  <body>
+    <!-- Header -->
+    <header class="header">
       <div class="container">
-        <div class="logo">PioMar Dach</div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#contact" class="menu-mobile">Menu</a>
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <i class="fas fa-home logo-icon"></i>
+            <span>PioMar Dach</span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="desktop-nav">
+            <a href="#home">Start</a>
+            <a href="#services">Usługi</a>
+            <a href="#contact">Kontakt</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-button" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Header CTA -->
+          <div class="header-cta">
+            <a href="tel: 504 135 031" class="phone-button">
+              <i class="fas fa-phone-alt"></i> 504 135 031
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav">
+          <a href="#home">Start</a>
+          <a href="#services">Usługi</a>
+          <a href="#contact">Kontakt</a>
+          <a href="tel: 504 135 031" class="mobile-phone-button">
+            <i class="fas fa-phone-alt"></i> 504 135 031
+          </a>
+        </div>
       </div>
-    </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-content">
-          <span class="badge">Trusted Roofing Services</span>
-          <h1 class="hero-title">Quality Roofing Solutions For Your Home</h1>
-          <p class="hero-description">
-            Professional roofing services with quality craftsmanship and
-            exceptional customer service. Protect your investment with our
-            expert team.
+          <span class="badge">Usługi Dekarskie</span>
+          <h1>Solidne Dachy dla Twojego Domu</h1>
+          <p>
+            Profesjonalne usługi dekarskie – najwyższa jakość, rzetelność i
+            kompleksowa obsługa. Zadbaj o bezpieczeństwo swojego domu.
           </p>
           <div class="hero-buttons">
-            <!-- ion icons phone icon to be added -->
-            <a href="#contact" class="btn btn-primary"> Call+49 333 2221112</a>
-            <a href="#services" class="btn btn-secondary">Our Services</a>
+            <a href="tel: 504 135 031" class="primary-button">
+              <i class="fas fa-phone-alt"></i> 504 135 031
+            </a>
+            <a href="#services" class="secondary-button"> Nasze Usługi </a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <div class="container">
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>
-            With over 20 years of experience, RoofingCo has been delivering
-            top-quality roofing services to homeowners and businesses. Our
-            skilled team is committed to excellence and customer satisfaction.
-          </p>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section services">
+    <section id="services" class="services">
       <div class="container">
         <div class="section-header">
-          <h2>Our Services</h2>
+          <span class="section-tag">Nasza Specjalność</span>
+          <h2>Kompleksowe Usługi Dekarskie</h2>
+          <p>
+            Oferujemy pełen zakres usług dekarskich dla domów i firm –
+            fachowość, terminowość i zadowolenie klienta.
+          </p>
         </div>
+
         <div class="services-grid">
+          <!-- Service 1 -->
           <div class="service-card">
-            <h3>Roof Installation</h3>
+            <div class="service-icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3>Naprawa Dachów</h3>
             <p>
-              High-quality roof installations using premium materials and
-              professional craftsmanship.
+              Skuteczne usuwanie przecieków, uszkodzeń i wydłużanie żywotności
+              dachu.
             </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Naprawy awaryjne</li>
+              <li><i class="fas fa-check"></i> Wymiana dachówek</li>
+              <li><i class="fas fa-check"></i> Naprawy konstrukcyjne</li>
+            </ul>
+            <a href="tel: 504 135 031" class="service-link">
+              Zadzwoń <i class="fas fa-phone-alt"></i>
+            </a>
           </div>
+
+          <!-- Service 2 -->
           <div class="service-card">
-            <h3>Roof Repair</h3>
+            <div class="service-icon">
+              <i class="fas fa-trash-alt"></i>
+            </div>
+            <h3>Czyszczenie Dachów</h3>
             <p>
-              Fast and reliable roof repair services to keep your home protected
-              from the elements.
+              Profesjonalne czyszczenie dachów z mchu, glonów i zanieczyszczeń.
             </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Usuwanie mchu i glonów</li>
+              <li><i class="fas fa-check"></i> Czyszczenie rynien</li>
+              <li><i class="fas fa-check"></i> Mycie ciśnieniowe</li>
+            </ul>
+            <a href="tel: 504 135 031" class="service-link">
+              Zadzwoń <i class="fas fa-phone-alt"></i>
+            </a>
           </div>
+
+          <!-- Service 3 -->
           <div class="service-card">
-            <h3>Roof Inspection</h3>
-            <p>
-              Thorough inspections to identify issues and extend the life of
-              your roof.
-            </p>
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Malowanie Dachów</h3>
+            <p>Estetyczne i trwałe malowanie dachów – ochrona i nowy wygląd.</p>
+            <ul class="service-features">
+              <li><i class="fas fa-check"></i> Powłoki hydrofobowe</li>
+              <li><i class="fas fa-check"></i> Odświeżenie koloru</li>
+              <li><i class="fas fa-check"></i> Ochrona UV</li>
+            </ul>
+            <a href="tel: 504 135 031" class="service-link">
+              Zadzwoń <i class="fas fa-phone-alt"></i>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- Client wants a simple contact section. -->
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+
+    <!-- CTA Section -->
+    <section class="cta">
       <div class="container">
-        <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>We’d love to hear from you! Get in touch using the form below.</p>
+        <h2>Gotowy na nowy dach?</h2>
+        <p>
+          Skontaktuj się z nami i otrzymaj darmową wycenę. Gwarantujemy
+          rzetelność i najwyższą jakość usług.
+        </p>
+        <a href="tel: 504 135 031" class="cta-button">
+          <i class="fas fa-phone-alt"></i> 504 135 031
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-header">
+          <span class="section-tag">Skontaktuj się</span>
+          <h2>Kontakt</h2>
+          <p>
+            Masz pytania lub potrzebujesz wyceny? Zadzwoń – jesteśmy do Twojej
+            dyspozycji.
+          </p>
         </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+
+        <div class="contact-grid">
+          <!-- Location -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Adres</h3>
+            <p>Powstańców Śląskich 6/4 <br>48-200 Prudnik</br></p>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Telefon</h3>
+            <p>504 135 031</p>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p> piomarp@wp.pl </p>
+          </div>
+
+          <!-- Hours -->
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Godziny pracy</h3>
+            <p>
+              Pn-Pt: 8:00 - 18:00<br />Sob: 9:00 - 14:00<br />Niedz: Zamknięte
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2025 RoofingCo. All rights reserved.</p>
+      <div class="container">
+        <p>
+          &copy; <span id="current-year"></span> Elite Roofing. Wszelkie prawa
+          zastrzeżone.
+        </p>
+      </div>
     </footer>
+
+    <script src="script4.js"></script>
   </body>
 </html>
