@@ -187,6 +187,21 @@ p {
   display: flex;
 }
 
+.phone-button,
+.mobile-phone-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Creates space between icon and number */
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap; /* Prevent line break between icon and number */
+}
+
+.phone-button i,
+.mobile-phone-button i {
+  font-size: 1rem; /* Adjust icon size */
+}
+
 /* Hero Section */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
