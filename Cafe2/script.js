@@ -28,7 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
     
+    // NEW CODE: Make visible sections that are already in viewport on load
     sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            section.classList.add('visible');
+        }
         observer.observe(section);
     });
 
